@@ -1,0 +1,21 @@
+{
+  "name": "camp-and-travel-surabaya",
+  "version": "1.0.0",
+  "description": "Camp & Travel Surabaya - Sistem Pelayanan Terpadu",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve -s .",
+    "build": "echo 'No build process needed for static site'"
+  },
+  "keywords": [
+    "travel",
+    "camp",
+    "surabaya",
+    "tourism"
+  ],
+  "author": "Camp & Travel Surabaya",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}
