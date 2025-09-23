@@ -12,6 +12,18 @@
             min-height: 100vh;
         }
     </style>
+    <script>
+        function updateStatus(bookingId, status) {
+            const row = document.getElementById('row-' + bookingId);
+            const actionCell = row.querySelector('.action-buttons');
+            
+            if (status === 'accept') {
+                actionCell.innerHTML = '<div class="text-center"><span class="px-4 py-2 bg-green-500 text-white rounded-full font-medium">Diterima</span></div>';
+            } else if (status === 'reject') {
+                actionCell.innerHTML = '<div class="text-center"><span class="px-4 py-2 bg-red-500 text-white rounded-full font-medium">Ditolak</span></div>';
+            }
+        }
+    </script>
 </head>
 <body class="font-sans">
     <!-- Header -->
@@ -72,7 +84,7 @@
             <!-- Table Rows -->
             <div class="space-y-4">
                 <!-- Row 1 -->
-                <div class="grid grid-cols-6 gap-4 items-center">
+                <div id="row-BKT001" class="grid grid-cols-6 gap-4 items-center">
                     <div class="bg-gray-300 rounded-full px-4 py-3 text-center">
                         <span class="font-medium text-gray-800">BKT001</span>
                     </div>
@@ -85,20 +97,22 @@
                     <div class="bg-gray-300 rounded-full px-4 py-3 text-center">
                         <span class="font-medium text-gray-800">07.00 - 17.00</span>
                     </div>
-                    <div class="text-center">
-                        <button class="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-full font-medium transition-colors duration-300">
-                            No
-                        </button>
-                    </div>
-                    <div class="text-center">
-                        <button class="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-full font-medium transition-colors duration-300">
-                            Yes
-                        </button>
+                    <div class="action-buttons col-span-2 grid grid-cols-2 gap-2">
+                        <div class="text-center">
+                            <button onclick="updateStatus('BKT001', 'reject')" class="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-full font-medium transition-colors duration-300">
+                                No
+                            </button>
+                        </div>
+                        <div class="text-center">
+                            <button onclick="updateStatus('BKT001', 'accept')" class="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-full font-medium transition-colors duration-300">
+                                Yes
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Row 2 -->
-                <div class="grid grid-cols-6 gap-4 items-center">
+                <div id="row-BKT002" class="grid grid-cols-6 gap-4 items-center">
                     <div class="bg-gray-300 rounded-full px-4 py-3 text-center">
                         <span class="font-medium text-gray-800">BKT002</span>
                     </div>
@@ -111,20 +125,22 @@
                     <div class="bg-gray-300 rounded-full px-4 py-3 text-center">
                         <span class="font-medium text-gray-800">07.00 - 17.00</span>
                     </div>
-                    <div class="text-center">
-                        <button class="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-full font-medium transition-colors duration-300">
-                            No
-                        </button>
-                    </div>
-                    <div class="text-center">
-                        <button class="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-full font-medium transition-colors duration-300">
-                            Yes
-                        </button>
+                    <div class="action-buttons col-span-2 grid grid-cols-2 gap-2">
+                        <div class="text-center">
+                            <button onclick="updateStatus('BKT002', 'reject')" class="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-full font-medium transition-colors duration-300">
+                                No
+                            </button>
+                        </div>
+                        <div class="text-center">
+                            <button onclick="updateStatus('BKT002', 'accept')" class="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-full font-medium transition-colors duration-300">
+                                Yes
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Row 3 -->
-                <div class="grid grid-cols-6 gap-4 items-center">
+                <div id="row-BKT003" class="grid grid-cols-6 gap-4 items-center">
                     <div class="bg-gray-300 rounded-full px-4 py-3 text-center">
                         <span class="font-medium text-gray-800">BKT003</span>
                     </div>
@@ -137,15 +153,17 @@
                     <div class="bg-gray-300 rounded-full px-4 py-3 text-center">
                         <span class="font-medium text-gray-800">08.00 - 17.00</span>
                     </div>
-                    <div class="text-center">
-                        <button class="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-full font-medium transition-colors duration-300">
-                            No
-                        </button>
-                    </div>
-                    <div class="text-center">
-                        <button class="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-full font-medium transition-colors duration-300">
-                            Yes
-                        </button>
+                    <div class="action-buttons col-span-2 grid grid-cols-2 gap-2">
+                        <div class="text-center">
+                            <button onclick="updateStatus('BKT003', 'reject')" class="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-full font-medium transition-colors duration-300">
+                                No
+                            </button>
+                        </div>
+                        <div class="text-center">
+                            <button onclick="updateStatus('BKT003', 'accept')" class="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-full font-medium transition-colors duration-300">
+                                Yes
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
