@@ -4,31 +4,31 @@
   "rewrites": [
     {
       "source": "/",
-      "destination": "/Assets/home.html"
+      "destination": "/home.html"
     },
     {
       "source": "/home",
-      "destination": "/Assets/home.html"
+      "destination": "/home.html"
     },
     {
       "source": "/login",
-      "destination": "/Assets/login.html"
+      "destination": "/login.html"
     },
     {
       "source": "/register",
-      "destination": "/Assets/register_selection.html"
+      "destination": "/register_selection.html"
     },
     {
       "source": "/dashboard-admin",
-      "destination": "/Assets/dashboard_admin.html"
+      "destination": "/dashboard_admin.html"
     },
     {
       "source": "/dashboard-guide",
-      "destination": "/Assets/dashboard_guide.html"
+      "destination": "/dashboard_guide.html"
     },
     {
       "source": "/dashboard-customer",
-      "destination": "/Assets/dashboard_customer.html"
+      "destination": "/dashboard_customer.html"
     }
   ]
 }
