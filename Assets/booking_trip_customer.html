@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Trip Customer - Camp & Travel Surabaya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Header -->
+    <header class="bg-white bg-opacity-10 backdrop-blur-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo and Title -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 bg-gradient-to-br from-orange-400 to-pink-500 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-mountain text-white text-sm"></i>
+                    </div>
+                    <h1 class="text-white text-xl font-bold">Camp & Travel Surabaya</h1>
+                </div>
+                <!-- Log Out Button -->
+                <button onclick="window.location.href='login.html'" 
+                        class="px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-lg font-medium transition-colors duration-300">
+                    Log Out
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex flex-col items-center justify-center min-h-screen px-6 py-20">
+        <!-- Page Title -->
+        <div class="flex items-center justify-center w-full max-w-6xl mb-8">
+            <button onclick="window.location.href='dashboard_admin.html'" 
+                    class="mr-4 px-4 py-2 bg-gray-500 hover:bg-gray-600 text-white rounded-lg transition-colors duration-300 flex items-center">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"/>
+                </svg>
+                Back
+            </button>
+            <h1 class="text-3xl font-bold text-white">Book Trip Customer</h1>
+        </div>
+
+        <!-- Table Container -->
+        <div class="w-full max-w-6xl">
+            <!-- Table Headers -->
+            <div class="grid grid-cols-6 gap-4 mb-4">
+                <div class="bg-gray-300 rounded-full px-4 py-3 text-center">
+                    <span class="font-semibold text-gray-800">ID</span>
+                </div>
+                <div class="bg-gray-300 rounded-full px-4 py-3 text-center">
+                    <span class="font-semibold text-gray-800">NAMA</span>
+                </div>
+                <div class="bg-gray-300 rounded-full px-4 py-3 text-center">
+                    <span class="font-semibold text-gray-800">TANGGAL</span>
+                </div>
+                <div class="bg-gray-300 rounded-full px-4 py-3 text-center">
+                    <span class="font-semibold text-gray-800">JAM</span>
+                </div>
+                <div class="bg-gray-300 rounded-full px-4 py-3 text-center col-span-2">
+                    <span class="font-semibold text-gray-800">Action</span>
+                </div>
+            </div>
+
+            <!-- Table Rows -->
+            <div class="space-y-4">
+                <!-- Row 1 -->
+                <div class="grid grid-cols-6 gap-4 items-center">
+                    <div class="bg-gray-300 rounded-full px-4 py-3 text-center">
+                        <span class="font-medium text-gray-800">BKT001</span>
+                    </div>
+                    <div class="bg-gray-300 rounded-full px-4 py-3 text-center">
+                        <span class="font-medium text-gray-800">Sari Dewi</span>
+                    </div>
+                    <div class="bg-gray-300 rounded-full px-4 py-3 text-center">
+                        <span class="font-medium text-gray-800">25 Maret 2024</span>
+                    </div>
+                    <div class="bg-gray-300 rounded-full px-4 py-3 text-center">
+                        <span class="font-medium text-gray-800">07.00 - 17.00</span>
+                    </div>
+                    <div class="text-center">
+                        <button class="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-full font-medium transition-colors duration-300">
+                            No
+                        </button>
+                    </div>
+                    <div class="text-center">
+                        <button class="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-full font-medium transition-colors duration-300">
+                            Yes
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="grid grid-cols-6 gap-4 items-center">
+                    <div class="bg-gray-300 rounded-full px-4 py-3 text-center">
+                        <span class="font-medium text-gray-800">BKT002</span>
+                    </div>
+                    <div class="bg-gray-300 rounded-full px-4 py-3 text-center">
+                        <span class="font-medium text-gray-800">Amel</span>
+                    </div>
+                    <div class="bg-gray-300 rounded-full px-4 py-3 text-center">
+                        <span class="font-medium text-gray-800">26 Maret 2024</span>
+                    </div>
+                    <div class="bg-gray-300 rounded-full px-4 py-3 text-center">
+                        <span class="font-medium text-gray-800">07.00 - 17.00</span>
+                    </div>
+                    <div class="text-center">
+                        <button class="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-full font-medium transition-colors duration-300">
+                            No
+                        </button>
+                    </div>
+                    <div class="text-center">
+                        <button class="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-full font-medium transition-colors duration-300">
+                            Yes
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="grid grid-cols-6 gap-4 items-center">
+                    <div class="bg-gray-300 rounded-full px-4 py-3 text-center">
+                        <span class="font-medium text-gray-800">BKT003</span>
+                    </div>
+                    <div class="bg-gray-300 rounded-full px-4 py-3 text-center">
+                        <span class="font-medium text-gray-800">Dina</span>
+                    </div>
+                    <div class="bg-gray-300 rounded-full px-4 py-3 text-center">
+                        <span class="font-medium text-gray-800">27 Maret 2024</span>
+                    </div>
+                    <div class="bg-gray-300 rounded-full px-4 py-3 text-center">
+                        <span class="font-medium text-gray-800">08.00 - 17.00</span>
+                    </div>
+                    <div class="text-center">
+                        <button class="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-full font-medium transition-colors duration-300">
+                            No
+                        </button>
+                    </div>
+                    <div class="text-center">
+                        <button class="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-full font-medium transition-colors duration-300">
+                            Yes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back Button -->
+        <div class="mt-8">
+            <button onclick="window.location.href='dashboard_customer.html'" 
+                    class="px-6 py-2 bg-gray-600 hover:bg-gray-700 text-white font-medium rounded-lg transition-colors duration-300">
+                Kembali ke Dashboard
+            </button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+<footer class="bg-white border-t border-gray-300 py-10 px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0">
+            
+            <!-- Social Media -->
+            <div class="flex space-x-5 text-2xl text-gray-800">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+            <!-- Links -->
+            <div class="grid grid-cols-3 gap-12 text-sm text-gray-700">
+                <div>
+                    <h3 class="font-bold mb-2">Use cases</h3>
+                    <ul class="space-y-1">
+                        <li><a href="#" class="hover:underline">UI design</a></li>
+                        <li><a href="#" class="hover:underline">UX design</a></li>
+                        <li><a href="#" class="hover:underline">Wireframing</a></li>
+                        <li><a href="#" class="hover:underline">Diagramming</a></li>
+                        <li><a href="#" class="hover:underline">Brainstorming</a></li>
+                        <li><a href="#" class="hover:underline">Online whiteboard</a></li>
+                        <li><a href="#" class="hover:underline">Team collaboration</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-2">Explore</h3>
+                    <ul class="space-y-1">
+                        <li><a href="#" class="hover:underline">Design</a></li>
+                        <li><a href="#" class="hover:underline">Prototyping</a></li>
+                        <li><a href="#" class="hover:underline">Development features</a></li>
+                        <li><a href="#" class="hover:underline">Design systems</a></li>
+                        <li><a href="#" class="hover:underline">Collaboration features</a></li>
+                        <li><a href="#" class="hover:underline">Design process</a></li>
+                        <li><a href="#" class="hover:underline">FigJam</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-2">Resources</h3>
+                    <ul class="space-y-1">
+                        <li><a href="#" class="hover:underline">Blog</a></li>
+                        <li><a href="#" class="hover:underline">Best practices</a></li>
+                        <li><a href="#" class="hover:underline">Colors</a></li>
+                        <li><a href="#" class="hover:underline">Color wheel</a></li>
+                        <li><a href="#" class="hover:underline">Support</a></li>
+                        <li><a href="#" class="hover:underline">Developers</a></li>
+                        <li><a href="#" class="hover:underline">Resource library</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <img src="Assets/logo camppp.png" alt="Logo" class="h-8 w-8 rounded">
+                <span class="text-xl font-bold text-gray-800">Camp & Travel</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
