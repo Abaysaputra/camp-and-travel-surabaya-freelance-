@@ -1,47 +1,35 @@
 {
   "version": 2,
-  "builds": [
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
     {
-      "src": "**/*.html",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/Assets/home.html"
+      "source": "/",
+      "destination": "/Assets/home.html"
     },
     {
-      "src": "/home",
-      "dest": "/Assets/home.html"
+      "source": "/home",
+      "destination": "/Assets/home.html"
     },
     {
-      "src": "/login",
-      "dest": "/Assets/login.html"
+      "source": "/login",
+      "destination": "/Assets/login.html"
     },
     {
-      "src": "/register",
-      "dest": "/Assets/register_selection.html"
+      "source": "/register",
+      "destination": "/Assets/register_selection.html"
     },
     {
-      "src": "/dashboard-admin",
-      "dest": "/Assets/dashboard_admin.html"
+      "source": "/dashboard-admin",
+      "destination": "/Assets/dashboard_admin.html"
     },
     {
-      "src": "/dashboard-guide",
-      "dest": "/Assets/dashboard_guide.html"
+      "source": "/dashboard-guide",
+      "destination": "/Assets/dashboard_guide.html"
     },
     {
-      "src": "/dashboard-customer",
-      "dest": "/Assets/dashboard_customer.html"
-    },
-    {
-      "src": "/Assets/(.*)",
-      "dest": "/Assets/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/Assets/$1"
+      "source": "/dashboard-customer",
+      "destination": "/Assets/dashboard_customer.html"
     }
   ],
   "headers": [
@@ -50,7 +38,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
+          "value": "public, max-age=3600"
         }
       ]
     }
