@@ -4,18 +4,16 @@
   "description": "Camp & Travel Surabaya - Sistem Pelayanan Terpadu",
   "main": "index.html",
   "scripts": {
-    "start": "serve -s .",
-    "build": "echo 'No build process needed for static site'"
+    "start": "echo 'Static site - no server needed'",
+    "build": "echo 'Static site - no build needed'"
   },
   "keywords": [
     "travel",
     "camp",
     "surabaya",
-    "tourism"
+    "tourism",
+    "static-site"
   ],
   "author": "Camp & Travel Surabaya",
-  "license": "MIT",
-  "devDependencies": {
-    "serve": "^14.2.0"
-  }
+  "license": "MIT"
 }
