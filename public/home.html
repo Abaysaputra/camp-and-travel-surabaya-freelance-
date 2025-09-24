@@ -1,129 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Camp & Travel Surabaya</title>
   <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Headline playful untuk "WELCOME" -->
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    .font-lilita { font-family: 'Lilita One', system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+  </style>
 </head>
 <body class="min-h-screen bg-gradient-to-br from-purple-500 via-purple-600 to-indigo-600">
 
   <!-- Navbar -->
-  <header class="bg-gradient-to-r from-purple-400 to-indigo-400 flex items-center justify-between px-6 py-3">
-    <div class="flex items-center space-x-3">
-      <img src="Assets/logo camppp.png" alt="Logo" class="h-10 w-10 rounded-lg">
-      <span class="text-lg font-bold text-white">Camp & Travel Surabaya</span>
-    </div>
-    <div class="space-x-3">
-      <button onclick="window.location.href='register_selection.html'" class="px-4 py-1 bg-white text-gray-800 rounded">Sign In</button>
-      <button onclick="window.location.href='register_selection.html'" class="px-4 py-1 bg-gray-800 text-white rounded">Register</button>
+  <header class="bg-gradient-to-r from-purple-400 to-indigo-400/95 backdrop-blur-sm">
+    <div class="mx-auto max-w-7xl flex items-center justify-between px-4 sm:px-6 py-3">
+      <div class="flex items-center gap-3">
+        <img src="Assets/logo camppp.png" alt="Logo" class="h-10 w-10 rounded-lg">
+        <span class="text-base sm:text-lg font-bold text-white">Camp & Travel Surabaya</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <button onclick="window.location.href='register_selection.html'" class="px-4 py-1 rounded-md bg-white text-gray-800 hover:bg-gray-100">
+          Sign
+        </button>
+        <button onclick="window.location.href='register_selection.html'" class="px-4 py-1 rounded-md bg-gray-900 text-white hover:bg-black">
+          Register
+        </button>
+      </div>
     </div>
   </header>
 
-  <!-- Main Content Area -->
-  <main class="min-h-screen relative flex flex-col items-center justify-center text-center text-white px-6"
-        style="background-image: url('Assets/blur.png'); background-size: cover; background-position: center;">
-    
-    <!-- Background Overlay -->
-    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-    
-    <!-- Hero Content -->
-    <div class="relative z-10 max-w-4xl mx-auto">
-      <!-- Main Title -->
-      <div class="text-right mb-12">
-        <h1 class="text-5xl md:text-6xl font-bold text-white mb-4">
-          CAMP AND TRAVEL SURABAYA
-        </h1>
-        <p class="text-2xl md:text-3xl text-yellow-400 font-semibold">
-          Adventure Starts Here
-        </p>
-      </div>
+  <!-- HERO -->
+  <main class="relative">
+    <!-- Background -->
+    <div class="relative min-h-[82vh] sm:min-h-[84vh] flex items-center justify-center overflow-hidden"
+         style="background-image:url('Assets/blur.png'); background-size:cover; background-position:center;">
+      <!-- Overlay gradient agar teks kontras -->
+      <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-black/35 to-black/55"></div>
 
-      <!-- View More Button -->
-      <div class="mb-16">
-        <button onclick="window.location.href='register_selection.html'" 
-                class="px-8 py-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-full shadow-lg transition-colors duration-300">
-          View More
-        </button>
-      </div>
+      <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6">
+        <!-- Heading kanan -->
+        <div class="text-right drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)]">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-wide text-white">
+            CAMP AND TRAVEL SURABAYA
+          </h1>
+          <p class="text-xl sm:text-2xl md:text-3xl font-semibold text-yellow-300 mt-1">
+            Adventure Starts Here
+          </p>
+        </div>
 
-      <!-- Welcome Section -->
-      <div class="text-left max-w-3xl">
-        <h2 class="text-4xl font-bold text-yellow-400 mb-6">WELCOME</h2>
-        <h3 class="text-2xl font-semibold text-white mb-4">Welcome to Camp & Travel Surabaya!</h3>
-        <p class="text-lg text-white leading-relaxed">
-          We are a community as well as a travel service provider focusing on nature tourism, 
-          camping, and exciting adventures around Surabaya and other fascinating destinations 
-          across Indonesia. Born from the passion of nature lovers and young travelers, we believe 
-          that every journey is not only about the destination, but also about the stories, 
-          togetherness, and unforgettable experiences along the way.
-        </p>
+        <!-- CTA center -->
+        <div class="w-full flex justify-center mt-10 md:mt-12">
+          <button
+            onclick="window.location.href='register_selection.html'"
+            class="group px-10 md:px-12 py-3 md:py-3.5 rounded-full border border-white/40 bg-white/10 backdrop-blur-md text-white font-semibold
+                   hover:bg-white/20 transition-all shadow-[inset_0_0_0_1px_rgba(255,255,255,0.15)]">
+            <span class="drop-shadow-[0_2px_6px_rgba(0,0,0,0.45)]">View More</span>
+          </button>
+        </div>
+
+        <!-- Welcome block kiri bawah -->
+        <section
+          class="mt-10 md:mt-14 max-w-5xl text-left drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)]">
+          <h2 class="font-lilita text-4xl sm:text-5xl text-yellow-300 leading-none">WELCOME</h2>
+          <h3 class="mt-3 text-xl sm:text-2xl font-semibold text-white">Welcome to Camp & Travel Surabaya!</h3>
+          <p class="mt-3 sm:mt-4 text-base sm:text-lg leading-relaxed text-white">
+            We are a community as well as a travel service provider focusing on nature tourism,
+            camping, and exciting adventures around Surabaya and other fascinating destinations
+            across Indonesia. Born from the passion of nature lovers and young travelers, we believe
+            that every journey is not only about the destination, but also about the stories,
+            togetherness, and unforgettable experiences along the way.
+          </p>
+        </section>
       </div>
     </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-white">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 py-10">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-10">
+          <!-- Social -->
+          <div class="flex items-center gap-5 text-2xl text-gray-800">
+            <a href="#" class="hover:text-gray-600"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="hover:text-gray-600"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-gray-600"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="hover:text-gray-600"><i class="fab fa-linkedin"></i></a>
+          </div>
+
+          <!-- Links -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 text-sm text-gray-700">
+            <div>
+              <h3 class="font-bold mb-2">Use cases</h3>
+              <ul class="space-y-1">
+                <li><a href="#" class="hover:underline">UI design</a></li>
+                <li><a href="#" class="hover:underline">UX design</a></li>
+                <li><a href="#" class="hover:underline">Wireframing</a></li>
+                <li><a href="#" class="hover:underline">Diagramming</a></li>
+                <li><a href="#" class="hover:underline">Brainstorming</a></li>
+                <li><a href="#" class="hover:underline">Online whiteboard</a></li>
+                <li><a href="#" class="hover:underline">Team collaboration</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-bold mb-2">Explore</h3>
+              <ul class="space-y-1">
+                <li><a href="#" class="hover:underline">Design</a></li>
+                <li><a href="#" class="hover:underline">Prototyping</a></li>
+                <li><a href="#" class="hover:underline">Development features</a></li>
+                <li><a href="#" class="hover:underline">Design systems</a></li>
+                <li><a href="#" class="hover:underline">Collaboration features</a></li>
+                <li><a href="#" class="hover:underline">Design process</a></li>
+                <li><a href="#" class="hover:underline">FigJam</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-bold mb-2">Resources</h3>
+              <ul class="space-y-1">
+                <li><a href="#" class="hover:underline">Blog</a></li>
+                <li><a href="#" class="hover:underline">Best practices</a></li>
+                <li><a href="#" class="hover:underline">Colors</a></li>
+                <li><a href="#" class="hover:underline">Color wheel</a></li>
+                <li><a href="#" class="hover:underline">Support</a></li>
+                <li><a href="#" class="hover:underline">Developers</a></li>
+                <li><a href="#" class="hover:underline">Resource library</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Brand -->
+          <div class="flex items-center gap-3">
+            <img src="Assets/logo camppp.png" alt="Logo" class="h-9 w-9 rounded-lg>
+            <span class="text-lg font-bold text-gray-900">Camp & Travel</span>
+          </div>
+        </div>
+      </div>
+    </footer>
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-white border-t border-gray-300 py-10 px-6">
-    <div class="flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0">
-      
-      <!-- Social Media -->
-      <div class="flex space-x-5 text-2xl text-gray-800">
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-      </div>
-
-      <!-- Links -->
-      <div class="grid grid-cols-3 gap-12 text-sm text-gray-700">
-        <div>
-          <h3 class="font-bold mb-2">Use cases</h3>
-          <ul class="space-y-1">
-            <li><a href="#" class="hover:underline">UI design</a></li>
-            <li><a href="#" class="hover:underline">UX design</a></li>
-            <li><a href="#" class="hover:underline">Wireframing</a></li>
-            <li><a href="#" class="hover:underline">Diagramming</a></li>
-            <li><a href="#" class="hover:underline">Brainstorming</a></li>
-            <li><a href="#" class="hover:underline">Online whiteboard</a></li>
-            <li><a href="#" class="hover:underline">Team collaboration</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-bold mb-2">Explore</h3>
-          <ul class="space-y-1">
-            <li><a href="#" class="hover:underline">Design</a></li>
-            <li><a href="#" class="hover:underline">Prototyping</a></li>
-            <li><a href="#" class="hover:underline">Development features</a></li>
-            <li><a href="#" class="hover:underline">Design systems</a></li>
-            <li><a href="#" class="hover:underline">Collaboration features</a></li>
-            <li><a href="#" class="hover:underline">Design process</a></li>
-            <li><a href="#" class="hover:underline">FigJam</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-bold mb-2">Resources</h3>
-          <ul class="space-y-1">
-            <li><a href="#" class="hover:underline">Blog</a></li>
-            <li><a href="#" class="hover:underline">Best practices</a></li>
-            <li><a href="#" class="hover:underline">Colors</a></li>
-            <li><a href="#" class="hover:underline">Color wheel</a></li>
-            <li><a href="#" class="hover:underline">Support</a></li>
-            <li><a href="#" class="hover:underline">Developers</a></li>
-            <li><a href="#" class="hover:underline">Resource library</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Logo -->
-      <div class="flex items-center space-x-2">
-        <img src="Assets/logo camppp.png" alt="Logo" class="h-8 w-8 rounded">
-        <span class="text-xl font-bold text-gray-800">Camp & Travel</span>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
