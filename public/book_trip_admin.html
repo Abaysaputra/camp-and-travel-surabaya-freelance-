@@ -36,7 +36,7 @@
     <main class="flex-grow flex flex-col items-center justify-center min-h-screen px-6 py-20">
         <!-- Page Title -->
         <div class="flex items-center justify-center w-full max-w-2xl mb-8">
-            <button onclick="window.location.href='dashboard_customer.html'" 
+            <button onclick="window.location.href='dashboard_admin.html'" 
                     class="mr-4 px-4 py-2 bg-gray-500 hover:bg-gray-600 text-white rounded-lg transition-colors duration-300 flex items-center">
                 <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"/>
@@ -109,7 +109,7 @@
 
                 <!-- Action Buttons -->
                 <div class="flex justify-end space-x-4 mt-8">
-                    <button type="button" onclick="window.location.href='paket_trip.html'" 
+                    <button type="button" onclick="window.location.href='paket_trip_admin.html'" 
                             class="px-6 py-3 bg-red-500 hover:bg-red-600 text-white rounded-full font-medium transition-colors duration-300">
                         Cancel
                     </button>
@@ -139,66 +139,6 @@
         </div>
     </div>
 
-    <!-- Footer -->
-<footer class="bg-white border-t border-gray-300 py-10 px-6">
-        <div class="flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0">
-            
-            <!-- Social Media -->
-            <div class="flex space-x-5 text-2xl text-gray-800">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
-
-            <!-- Links -->
-            <div class="grid grid-cols-3 gap-12 text-sm text-gray-700">
-                <div>
-                    <h3 class="font-bold mb-2">Use cases</h3>
-                    <ul class="space-y-1">
-                        <li><a href="#" class="hover:underline">UI design</a></li>
-                        <li><a href="#" class="hover:underline">UX design</a></li>
-                        <li><a href="#" class="hover:underline">Wireframing</a></li>
-                        <li><a href="#" class="hover:underline">Diagramming</a></li>
-                        <li><a href="#" class="hover:underline">Brainstorming</a></li>
-                        <li><a href="#" class="hover:underline">Online whiteboard</a></li>
-                        <li><a href="#" class="hover:underline">Team collaboration</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-bold mb-2">Explore</h3>
-                    <ul class="space-y-1">
-                        <li><a href="#" class="hover:underline">Design</a></li>
-                        <li><a href="#" class="hover:underline">Prototyping</a></li>
-                        <li><a href="#" class="hover:underline">Development features</a></li>
-                        <li><a href="#" class="hover:underline">Design systems</a></li>
-                        <li><a href="#" class="hover:underline">Collaboration features</a></li>
-                        <li><a href="#" class="hover:underline">Design process</a></li>
-                        <li><a href="#" class="hover:underline">FigJam</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-bold mb-2">Resources</h3>
-                    <ul class="space-y-1">
-                        <li><a href="#" class="hover:underline">Blog</a></li>
-                        <li><a href="#" class="hover:underline">Best practices</a></li>
-                        <li><a href="#" class="hover:underline">Colors</a></li>
-                        <li><a href="#" class="hover:underline">Color wheel</a></li>
-                        <li><a href="#" class="hover:underline">Support</a></li>
-                        <li><a href="#" class="hover:underline">Developers</a></li>
-                        <li><a href="#" class="hover:underline">Resource library</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Logo -->
-            <div class="flex items-center space-x-2">
-                <img src="Assets/logo camppp.png" alt="Logo" class="h-8 w-8 rounded">
-                <span class="text-xl font-bold text-gray-800">Camp & Travel</span>
-            </div>
-        </div>
-    </footer>
-
 
     <!-- JavaScript -->
     <script>
@@ -220,7 +160,7 @@
             const modal = document.getElementById('successModal');
             modal.classList.add('hidden');
             modal.classList.remove('flex');
-            window.location.href = 'booking_trip_customer.html';
+            window.location.href = 'paket_trip_admin.html';
         }
     </script>
 </body>

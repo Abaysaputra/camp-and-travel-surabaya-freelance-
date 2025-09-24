@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Camp & Travel Surabaya - Jadwal Guide</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="min-h-screen flex flex-col bg-[#7C6BF1]">
+
+  <!-- Navbar -->
+  <header class="bg-gradient-to-r from-purple-400 to-indigo-400 border-b border-white/20">
+    <div class="mx-auto max-w-7xl px-6 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="Assets/logo camppp.png" alt="Logo" class="h-10 w-10 rounded-lg object-cover">
+        <span class="text-white font-bold text-lg">Camp & Travel Surabaya</span>
+      </div>
+      <button onclick="location.href='home.html'"
+              class="px-4 py-1 rounded bg-red-500 hover:bg-red-600 text-white text-sm font-semibold">
+        Log Out
+      </button>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="flex-1">
+    <div class="mx-auto max-w-4xl px-6 py-10">
+      <h1 class="text-white text-3xl font-extrabold text-center mb-8">Jadwal Guide</h1>
+
+      <!-- Card -->
+      <div class="mx-auto max-w-3xl rounded-lg bg-[#E3E3E3] p-8 shadow-lg">
+        <form class="space-y-6" onsubmit="event.preventDefault()">
+          <!-- Tanggal Trip -->
+          <div class="space-y-2">
+            <label class="block text-gray-700 font-semibold">Tanggal Trip</label>
+            <input id="tanggal" type="text" value="25 Maret 2024" disabled
+                   class="w-full rounded-md border border-gray-300 bg-white px-4 py-3 focus:outline-none disabled:opacity-100"/>
+          </div>
+
+          <!-- Jam Kerja -->
+          <div class="space-y-2">
+            <label class="block text-gray-700 font-semibold">Jam Kerja</label>
+            <input id="jam" type="text" value="07.00-17.00" disabled
+                   class="w-full rounded-md border border-gray-300 bg-white px-4 py-3 focus:outline-none disabled:opacity-100"/>
+          </div>
+
+          <!-- Tombol Edit/Save -->
+          <div class="flex justify-center pt-2">
+            <button id="editBtn" type="button"
+                    class="inline-flex items-center rounded-full bg-green-500 px-8 py-2.5 font-semibold text-white shadow hover:bg-green-600 transition">
+              Edit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script>
+    // Toggle Edit/Save
+    const editBtn = document.getElementById('editBtn');
+    const tanggal = document.getElementById('tanggal');
+    const jam = document.getElementById('jam');
+
+    editBtn.addEventListener('click', () => {
+      const editing = tanggal.disabled;
+      tanggal.disabled = !editing;
+      jam.disabled = !editing;
+      editBtn.textContent = editing ? 'Save' : 'Edit';
+
+      // opsional: fokus ke field pertama saat mode edit
+      if (editing) tanggal.focus();
+    });
+  </script>
+</body>
+</html>
